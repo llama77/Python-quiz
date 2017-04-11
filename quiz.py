@@ -49,15 +49,11 @@ def main():
     print("What category would you like")
     time.sleep(1.0)
     print("A, Animals")
-    print("B, Food")
-    type = input("C, Linux.\n")
+    type = input("B, Food.\n")
     if type == "A":
        animal_quiz()
     if type == "B":
         food_quiz()
-    if type == "C":
-        linux_quiz()
-
 
 def animal_quiz():
     global score
@@ -172,33 +168,6 @@ def food_quiz():
         print("Current score is {}".format(score))
         time.sleep(1.5)
     End()
-    
-    
-    
-        
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-def linux_quiz():
-    print("test")
-
-
-
 
 
 
@@ -210,7 +179,5 @@ def End():
     else:
         print("Well that sucks you finished the quiz with {}".format(score))
     
-
-
 
 if __name__ == "__main__": main()
